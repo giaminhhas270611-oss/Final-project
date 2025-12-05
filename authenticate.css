@@ -1,0 +1,42 @@
+/*
+    Shared Authentication Styles
+    These styles are designed to complement Bootstrap 5, maintaining the original
+    Marketplace theme aesthetics (colors, font, shadow).
+*/
+
+/* Custom CSS variables matching the theme */
+:root {
+    --brand-color: #4f46e5; /* indigo-600 */
+    --background-color: #f7f9fb; /* gray-50/100 */
+    --text-color: #1f2937; /* gray-900 */
+}
+
+/* Base styles for the page */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    background-color: var(--background-color); 
+    color: var(--text-color);
+}
+
+/* Card Shadow (auth-card is renamed to card in the HTML with Bootstrap) */
+.card {
+    /* Shadow and rounded corners matching the product-card in style.css */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+    border: none; /* Remove default bootstrap border */
+}
+
+/* Brand Text Color - used for logo and links */
+.text-brand {
+    color: var(--brand-color) !important;
+}
+
+/* Custom Primary Button Colors (ensures the primary button uses the indigo brand color) */
+.btn-primary {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #4338ca !important; /* Slightly darker indigo for hover */
+    border-color: #4338ca !important;
+}
