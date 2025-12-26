@@ -4,23 +4,63 @@
 
 const MOCK_API_DATA = {
     "Trending Electronics": [
-        { id: 1, title: "Wireless Noise-Cancelling Headphones", price: 199.99, rating: 4.7, image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=250&h=250&fit=crop", reviews: 1243, inStock: true },
-        { id: 2, title: "4K Curved Gaming Monitor", price: 449.00, rating: 4.5, image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=250&h=250&fit=crop", reviews: 856, inStock: true },
-        { id: 3, title: "Portable 1TB SSD Drive", price: 89.99, rating: 4.8, image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=250&h=250&fit=crop", reviews: 2104, inStock: true },
-        { id: 4, title: "Smart Home Speaker Assistant", price: 49.99, rating: 4.2, image: "https://images.unsplash.com/photo-1589003077984-894e133da26d?w=250&h=250&fit=crop", reviews: 1567, inStock: true },
-        { id: 5, title: "Mechanical RGB Keyboard", price: 129.50, rating: 4.6, image: "https://images.unsplash.com/photo-1587829191301-51117c2367e0?w=250&h=250&fit=crop", reviews: 891, inStock: true },
-        { id: 6, title: "High-Speed Mesh Router", price: 149.99, rating: 4.3, image: "https://images.unsplash.com/photo-1572820906580-d83f5ce7c8d6?w=250&h=250&fit=crop", reviews: 723, inStock: true },
+        { id: 1, title: "Wireless Noise-Cancelling Headphones", price: 199.99, rating: 4.7, image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80", reviews: 1243, inStock: true },
+        { id: 2, title: "4K Curved Gaming Monitor", price: 449.00, rating: 4.5, image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500&q=80", reviews: 856, inStock: true },
+        { id: 3, title: "Portable 1TB SSD Drive", price: 89.99, rating: 4.8, image: "https://i.pinimg.com/1200x/ec/cf/01/eccf012d870cbbcb304da42e16a5cfad.jpg", reviews: 2104, inStock: true },
+        { id: 4, title: "Smart Home Speaker Assistant", price: 49.99, rating: 4.2, image: "https://i.pinimg.com/1200x/a0/a1/f9/a0a1f9b366b4c4e2e8b49224d6eb9775.jpg", reviews: 1567, inStock: true },
+        { id: 5, title: "Mechanical RGB Keyboard", price: 129.50, rating: 4.6, image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=500&q=80", reviews: 891, inStock: true },
+        { id: 6, title: "High-Speed Mesh Router", price: 149.99, rating: 4.3, image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500&q=80", reviews: 723, inStock: true },
+        { id: 20, title: "Bluetooth Wireless Earbuds", price: 79.99, rating: 4.4, image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&q=80", reviews: 2156, inStock: true },
+        { id: 21, title: "Smart Fitness Watch", price: 249.99, rating: 4.6, image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80", reviews: 1876, inStock: true },
+        { id: 22, title: "Portable Power Bank 20000mAh", price: 39.99, rating: 4.5, image: "https://images.unsplash.com/photo-1609594040430-3e5c3e0c6b0d?w=500&q=80", reviews: 1432, inStock: true },
+        { id: 35, title: "Wireless Gaming Mouse", price: 59.99, rating: 4.7, image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&q=80", reviews: 987, inStock: true },
+        { id: 36, title: "USB-C Hub Multiport Adapter", price: 34.99, rating: 4.3, image: "https://images.unsplash.com/photo-1625842268584-8f3296236761?w=500&q=80", reviews: 654, inStock: true },
+        { id: 37, title: "Smart LED Light Strip", price: 29.99, rating: 4.5, image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80", reviews: 876, inStock: true },
     ],
     "Daily Deals & Discounts": [
-        { id: 7, title: "Bamboo Cutting Board Set (20% Off)", price: 24.99, rating: 4.9, image: "https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=250&h=250&fit=crop", reviews: 543, inStock: true },
-        { id: 8, title: "Stainless Steel Water Bottle", price: 15.00, rating: 4.7, image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=250&h=250&fit=crop", reviews: 789, inStock: true },
-        { id: 9, title: "Ergonomic Office Chair", price: 175.50, rating: 4.4, image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=250&h=250&fit=crop", reviews: 456, inStock: false },
+        { id: 7, title: "Bamboo Cutting Board Set (20% Off)", price: 24.99, rating: 4.9, image: "https://i.pinimg.com/1200x/04/94/63/0494632d5e60c0d02ac617557601367b.jpg", reviews: 543, inStock: true },
+        { id: 8, title: "Stainless Steel Water Bottle", price: 15.00, rating: 4.7, image: "https://i.pinimg.com/736x/74/d5/44/74d544acb5e2900acb4b46b2be2a8693.jpg", reviews: 789, inStock: true },
+        { id: 9, title: "Ergonomic Office Chair", price: 175.50, rating: 4.4, image: "https://i.pinimg.com/1200x/a9/ec/fb/a9ecfbea36900cd51b50ce57519cdc0a.jpg", reviews: 456, inStock: false },
         { id: 10, title: "Yoga Mat and Strap Kit", price: 32.99, rating: 4.8, image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=250&h=250&fit=crop", reviews: 612, inStock: true },
+        { id: 23, title: "Ceramic Coffee Mug Set", price: 18.99, rating: 4.6, image: "https://i.pinimg.com/1200x/c1/dc/c3/c1dcc30e1a4808bca479412abe36482d.jpg", reviews: 987, inStock: true },
+        { id: 24, title: "LED Desk Lamp", price: 29.99, rating: 4.5, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=250&h=250&fit=crop", reviews: 654, inStock: true },
+        { id: 25, title: "Leather Notebook Set", price: 12.50, rating: 4.7, image: "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=250&h=250&fit=crop", reviews: 432, inStock: true },
+        { id: 38, title: "Wireless Charging Pad", price: 19.99, rating: 4.4, image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=250&h=250&fit=crop", reviews: 876, inStock: true },
+        { id: 39, title: "Portable Phone Stand", price: 9.99, rating: 4.3, image: "https://images.unsplash.com/photo-1589492477829-5e65395b66cc?w=250&h=250&fit=crop", reviews: 543, inStock: true },
+        { id: 40, title: "Desk Organizer Tray", price: 14.99, rating: 4.6, image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=250&h=250&fit=crop", reviews: 321, inStock: true },
     ],
     "Best Sellers in Books": [
         { id: 11, title: "The Self-Taught Developer (Paperback)", price: 12.99, rating: 4.6, image: "https://images.unsplash.com/photo-1507842217343-583f20270bc5?w=250&h=250&fit=crop", reviews: 234, inStock: true },
         { id: 12, title: "A Novel of the Future (Hardcover)", price: 19.50, rating: 4.9, image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=250&h=250&fit=crop", reviews: 567, inStock: true },
         { id: 13, title: "Historical Atlas: World Map Set", price: 39.99, rating: 4.7, image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=250&h=250&fit=crop", reviews: 345, inStock: true },
+        { id: 26, title: "Science Fiction Anthology", price: 16.99, rating: 4.8, image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=250&h=250&fit=crop", reviews: 789, inStock: true },
+        { id: 27, title: "Healthy Cooking Cookbook", price: 22.50, rating: 4.5, image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=250&h=250&fit=crop", reviews: 456, inStock: true },
+        { id: 28, title: "Inspiring Biography Collection", price: 14.99, rating: 4.7, image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=250&h=250&fit=crop", reviews: 321, inStock: true },
+        { id: 41, title: "Mystery Thriller Novel", price: 18.99, rating: 4.6, image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=250&h=250&fit=crop", reviews: 654, inStock: true },
+        { id: 42, title: "Children's Storybook Set", price: 25.99, rating: 4.8, image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=250&h=250&fit=crop", reviews: 432, inStock: true },
+        { id: 43, title: "Self-Help Motivation Guide", price: 16.50, rating: 4.4, image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=250&h=250&fit=crop", reviews: 876, inStock: true },
+    ],
+    "Home & Kitchen": [
+        { id: 14, title: "Espresso Machine with Milk Frother", price: 599.00, rating: 4.9, image: "https://images.unsplash.com/photo-1510972527921-ce03766a1cf1?w=500", reviews: 420, inStock: true },
+        { id: 15, title: "Air Fryer XL 8-Quart", price: 129.99, rating: 4.7, image: "https://images.unsplash.com/photo-1626074353765-517a681e40be?w=500", reviews: 2150, inStock: true },
+        { id: 16, title: "Minimalist Ceramic Dinnerware Set", price: 85.00, rating: 4.6, image: "https://images.unsplash.com/photo-1577113310929-212b1d620594?w=500", reviews: 89, inStock: true },
+        { id: 29, title: "High-Speed Blender", price: 149.99, rating: 4.8, image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500", reviews: 1234, inStock: true },
+        { id: 30, title: "Compact Microwave Oven", price: 89.99, rating: 4.5, image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500", reviews: 987, inStock: true },
+        { id: 31, title: "Stainless Steel Toaster", price: 49.99, rating: 4.4, image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500", reviews: 654, inStock: true },
+        { id: 44, title: "Electric Kettle", price: 39.99, rating: 4.6, image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500", reviews: 876, inStock: true },
+        { id: 45, title: "Non-Stick Cookware Set", price: 79.99, rating: 4.7, image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500", reviews: 543, inStock: true },
+        { id: 46, title: "Stand Mixer", price: 199.99, rating: 4.8, image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500", reviews: 432, inStock: true },
+    ],
+    "Fitness & Outdoors": [
+        { id: 17, title: "Adjustable Dumbbell Set (50lbs)", price: 299.00, rating: 4.8, image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=500", reviews: 312, inStock: true },
+        { id: 18, title: "Ultralight 2-Person Camping Tent", price: 159.50, rating: 4.5, image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=500", reviews: 156, inStock: true },
+        { id: 19, title: "Electric Mountain Bike", price: 1250.00, rating: 4.7, image: "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500", reviews: 45, inStock: false },
+        { id: 32, title: "Anti-Burst Yoga Ball", price: 24.99, rating: 4.6, image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500", reviews: 876, inStock: true },
+        { id: 33, title: "Waterproof Hiking Boots", price: 129.99, rating: 4.7, image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500", reviews: 543, inStock: true },
+        { id: 34, title: "GPS Fitness Tracker", price: 89.99, rating: 4.5, image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500", reviews: 2109, inStock: true },
+        { id: 47, title: "Resistance Bands Set", price: 19.99, rating: 4.4, image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500", reviews: 654, inStock: true },
+        { id: 48, title: "Protein Shaker Bottle", price: 12.99, rating: 4.6, image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500", reviews: 432, inStock: true },
+        { id: 49, title: "Foam Roller", price: 29.99, rating: 4.7, image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500", reviews: 876, inStock: true },
     ]
 };
 
@@ -67,6 +107,133 @@ function updateCartCount() {
         cartCount.classList.remove('hidden');
     } else {
         cartCount.classList.add('hidden');
+    }
+}
+
+/**
+ * Shows the cart modal
+ */
+function showCart() {
+    const cartModal = document.getElementById('cartModal');
+    cartModal.classList.remove('hidden');
+    renderCart();
+}
+
+/**
+ * Hides the cart modal
+ */
+function hideCart() {
+    const cartModal = document.getElementById('cartModal');
+    cartModal.classList.add('hidden');
+}
+
+/**
+ * Renders the cart content
+ */
+function renderCart() {
+    const cart = getCart();
+    const cartContent = document.getElementById('cartContent');
+    const cartSummary = document.getElementById('cartSummary');
+
+    if (cart.length === 0) {
+        cartContent.innerHTML = `
+            <div class="text-center py-8">
+                <svg class="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+                <p class="text-gray-500">Your cart is empty</p>
+            </div>
+        `;
+        cartSummary.innerHTML = '';
+        return;
+    }
+
+    // Render cart items
+    let itemsHTML = '';
+    let totalItems = 0;
+    let totalCost = 0;
+
+    cart.forEach(item => {
+        const quantity = item.quantity || 1;
+        const itemTotal = item.price * quantity;
+        totalItems += quantity;
+        totalCost += itemTotal;
+
+        itemsHTML += `
+            <div class="flex items-center space-x-4 py-4 border-b border-gray-200 last:border-b-0">
+                <div class="flex-1">
+                    <h3 class="font-medium text-sm">${item.title}</h3>
+                    <p class="text-gray-600 text-sm">$${item.price.toFixed(2)} each</p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <button onclick="updateCartItemQuantity(${item.id}, ${quantity - 1})" 
+                            class="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center text-sm font-medium">-</button>
+                    <span class="w-8 text-center text-sm font-medium">${quantity}</span>
+                    <button onclick="updateCartItemQuantity(${item.id}, ${quantity + 1})" 
+                            class="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center text-sm font-medium">+</button>
+                </div>
+                <div class="text-right">
+                    <p class="font-medium text-sm">$${itemTotal.toFixed(2)}</p>
+                    <button onclick="removeFromCart(${item.id})" class="text-red-500 hover:text-red-700 text-xs">Remove</button>
+                </div>
+            </div>
+        `;
+    });
+
+    cartContent.innerHTML = itemsHTML;
+
+    // Render summary
+    cartSummary.innerHTML = `
+        <div class="space-y-2">
+            <div class="flex justify-between text-sm">
+                <span>Total Items:</span>
+                <span class="font-medium">${totalItems}</span>
+            </div>
+            <div class="flex justify-between text-lg font-semibold">
+                <span>Total Cost:</span>
+                <span>$${totalCost.toFixed(2)}</span>
+            </div>
+            <button class="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors">
+                Proceed to Checkout
+            </button>
+        </div>
+    `;
+}
+
+/**
+ * Updates the quantity of a cart item
+ */
+function updateCartItemQuantity(productId, newQuantity) {
+    if (newQuantity <= 0) {
+        removeFromCart(productId);
+        return;
+    }
+
+    let cart = getCart();
+    const itemIndex = cart.findIndex(item => item.id === productId);
+
+    if (itemIndex !== -1) {
+        cart[itemIndex].quantity = newQuantity;
+        saveCart(cart);
+        updateCartCount();
+        renderCart();
+        showNotification(`✅ Quantity updated!`, 'success');
+    }
+}
+
+/**
+ * Removes an item from the cart
+ */
+function removeFromCart(productId) {
+    let cart = getCart();
+    const itemIndex = cart.findIndex(item => item.id === productId);
+
+    if (itemIndex !== -1) {
+        const removedItem = cart.splice(itemIndex, 1)[0];
+        saveCart(cart);
+        updateCartCount();
+        renderCart();
+        showNotification(`✅ "${removedItem.title}" removed from cart!`, 'success');
     }
 }
 
@@ -289,52 +456,36 @@ async function initApp() {
 document.addEventListener('DOMContentLoaded', () => {
     initApp();
     updateCartCount();
+
+    // Add search listener
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        // 'input' event triggers on every keystroke for real-time filtering
+        searchInput.addEventListener('input', handleSearch);
+    }
+
+    // Add cart button listener
+    const cartBtn = document.getElementById('cartBtn');
+    if (cartBtn) {
+        cartBtn.addEventListener('click', showCart);
+    }
+
+    // Add close cart button listener
+    const closeCartBtn = document.getElementById('closeCartBtn');
+    if (closeCartBtn) {
+        closeCartBtn.addEventListener('click', hideCart);
+    }
+
+    // Close cart when clicking outside
+    const cartModal = document.getElementById('cartModal');
+    if (cartModal) {
+        cartModal.addEventListener('click', (e) => {
+            if (e.target === cartModal) {
+                hideCart();
+            }
+        });
+    }
 });
-
-// Update cart count when storage changes (for multi-tab sync)
-window.addEventListener('storage', updateCartCount);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // ============================================
@@ -597,4 +748,64 @@ function resetToDefaultProducts() {
         showNotification('✅ Products reset to defaults', 'success');
         location.reload();
     }
+}
+
+// ============================================
+// 8. SEARCH FUNCTIONALITY
+// ============================================
+
+/**
+ * Filters products based on search query and re-renders
+ */
+function handleSearch(event) {
+    const searchTerm = event.target.value.toLowerCase();
+    const allProducts = getAllProducts(); // Gets current state of products
+    const filteredResults = {};
+
+    for (const [category, products] of Object.entries(allProducts)) {
+        const matchingProducts = products.filter(product => 
+            product.title.toLowerCase().includes(searchTerm)
+        );
+
+        // Only add category to results if it has matching products
+        if (matchingProducts.length > 0) {
+            filteredResults[category] = matchingProducts;
+        }
+    }
+
+    renderSearchResults(filteredResults, searchTerm);
+}
+
+/**
+ * Updates the UI with filtered results
+ */
+function renderSearchResults(results, searchTerm) {
+    const appContainer = document.getElementById('app-container');
+    
+    // If no results found
+    if (Object.keys(results).length === 0) {
+        appContainer.innerHTML = `
+            <div class="text-center py-20">
+                <p class="text-xl text-gray-600">No products found matching "${searchTerm}"</p>
+                <button onclick="resetSearch()" class="mt-4 text-indigo-600 hover:underline">Clear search</button>
+            </div>
+        `;
+        return;
+    }
+
+    // Render the filtered carousels
+    let html = '';
+    for (const [title, products] of Object.entries(results)) {
+        html += renderCarousel(title, products);
+    }
+    appContainer.innerHTML = html;
+}
+
+/**
+ * Clears the search input and resets the UI
+ */
+function resetSearch() {
+    const searchInput = document.getElementById('searchInput');
+    searchInput.value = '';
+    initApp(); // Re-runs the initial load logic
 }
